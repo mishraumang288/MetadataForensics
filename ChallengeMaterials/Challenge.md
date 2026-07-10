@@ -1,6 +1,6 @@
 # Metadata Forensics Lab
 
-This browser-based challenge models a small digital forensics triage exercise. Players inspect three files, identify leaked metadata, and recover a codeword from each case.
+This browser-based challenge models a small digital forensics triage exercise. Players inspect ten levels of files, identify leaked metadata, and recover a codeword from each case.
 
 ## Research framing
 The challenge is designed for a university setting: it demonstrates how metadata supports provenance analysis, location inference, and operational intelligence gathering even when the visible file content looks harmless.
@@ -51,9 +51,9 @@ After solving all three levels, compare the files as a set and answer one short 
 5. Enter the recovered codeword to unlock the next level.
 
 ## Levels
-- Level 1: image.jpg, a travel photo with an exposed descriptive field. Codeword: BOROBUDUR.
-- Level 2: document.pdf, a document that leaks its provenance in PDF fields. Codeword: PDF_LEAK.
-- Level 3: photo.png, a geotagged image that resolves to a Vienna landmark. Codeword: KUNSTHISTORISCHES_MUSEUM.
+The main challenge includes 10 numbered levels plus a bonus case.
+
+See `src/App.jsx` for the current level list, file names, hashes, and hints.
 
 ## Why this works well for university level
 - It is reproducible in a browser without requiring specialist software.
